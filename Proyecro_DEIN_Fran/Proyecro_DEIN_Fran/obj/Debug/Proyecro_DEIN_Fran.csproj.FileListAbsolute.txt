@@ -1,0 +1,16 @@
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\bin\Debug\Proyecro_DEIN_Fran.exe.config
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\bin\Debug\Proyecro_DEIN_Fran.exe
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\bin\Debug\Proyecro_DEIN_Fran.pdb
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.csproj.AssemblyReference.cache
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\MainWindow.g.cs
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\App.g.cs
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran_MarkupCompile.cache
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran_MarkupCompile.lref
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\MainWindow.baml
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.g.resources
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.Properties.Resources.resources
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.csproj.GenerateResource.cache
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.csproj.CoreCompileInputs.cache
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.exe
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.pdb
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.exe.config
