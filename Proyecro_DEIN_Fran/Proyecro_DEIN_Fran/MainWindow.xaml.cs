@@ -39,7 +39,10 @@ namespace Proyecro_DEIN_Fran
             }
             else if (sender == BotonOpciones)
             {
-                MessageBox.Show("Has clickeado Opciones");
+                //MessageBox.Show("Has clickeado Opciones");
+                Opciones opciones = new Opciones();
+                opciones.Show();
+                this.Close();
             }
             else if (sender == BotonCreditos)
             {

@@ -23,5 +23,13 @@ namespace Proyecro_DEIN_Fran
         {
             InitializeComponent();
         }
+
+        private void BotonReturn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
+
     }
 }
