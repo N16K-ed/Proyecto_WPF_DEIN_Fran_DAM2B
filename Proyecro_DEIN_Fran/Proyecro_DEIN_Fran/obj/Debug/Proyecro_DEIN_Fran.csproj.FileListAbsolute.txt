@@ -14,3 +14,5 @@ C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN
 C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.exe
 C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.pdb
 C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Proyecro_DEIN_Fran.exe.config
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Opciones.g.cs
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Opciones.baml

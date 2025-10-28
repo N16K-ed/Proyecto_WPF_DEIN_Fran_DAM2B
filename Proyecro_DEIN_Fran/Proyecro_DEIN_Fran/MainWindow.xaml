@@ -6,10 +6,59 @@
         xmlns:local="clr-namespace:Proyecro_DEIN_Fran"
         mc:Ignorable="d"
         Title="MainWindow" Height="412" Width="917" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Left="0" Top="0" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <!-- Estilo general para los botones personalizados -->
+        <Style x:Key="BotonAnimado" TargetType="Grid">
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Estado normal sin tinte -->
+            <Setter Property="Opacity" Value="1"/>
+
+            <Style.Triggers>
+                <!-- Cuando el mouse entra -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <!-- Aumenta el tamaño -->
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleX)"
+                                         To="1.1" Duration="0:0:0.15" />
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleY)"
+                                         To="1.1" Duration="0:0:0.15" />
+
+                                <!-- Aplica un tinte blanco translúcido -->
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                         To="0.85" Duration="0:0:0.15"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+
+                    <!-- Cuando el mouse sale -->
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleX)"
+                                         To="1" Duration="0:0:0.15" />
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleY)"
+                                         To="1" Duration="0:0:0.15" />
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                         To="1" Duration="0:0:0.15"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid Background="#FF2D2D2D">
 
         <Image x:Name="image" HorizontalAlignment="Right" Height="100" Margin="0,10,802,0" VerticalAlignment="Top" Width="100" Source="/Captura de pantalla 2025-10-09 194810.png"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Right" Height="40" Margin="0,336,862,10" VerticalAlignment="Top" Width="40" BorderBrush="#FF664B48" BorderThickness="3,3,3,3" RenderTransformOrigin="1.425,0.401" Click="Button_Click">
+        <Button x:Name="button" Content="" HorizontalAlignment="Right" Height="40" Margin="0,336,862,10" VerticalAlignment="Top" Width="40" BorderBrush="#FF664B48" BorderThickness="3,3,3,3" RenderTransformOrigin="1.425,0.401" Click="Button_Click" Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de pantalla 2025-10-09 200018.png" Stretch="Fill"/>
             </Button.Background>
@@ -18,8 +67,7 @@
 
         <!-- Uso Path(s) para los botones principales -->
         <!-- Botón Jugar -->
-        <Grid x:Name="BotonJugar" Width="304" Height="95" Margin="613,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand"
-              MouseLeftButtonDown="Boton_MouseLeftButtonDown">
+        <Grid x:Name="BotonJugar" Style="{StaticResource BotonAnimado}" Width="304" Height="95" Margin="613,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand" MouseLeftButtonDown="Boton_MouseLeftButtonDown">
             <Path Stretch="Fill" StrokeThickness="0">
                 <Path.Fill>
                     <ImageBrush ImageSource="/pared-ladrillo-bloques-pixeles-patron-fondo-nivel-juego-consola-retro-pixeles-cubicos-tex_384401-4691.jpg" Stretch="UniformToFill"/>
@@ -32,8 +80,7 @@
         </Grid>
 
         <!-- Botón Opciones -->
-        <Grid x:Name="BotonOpciones" Width="267" Height="80" Margin="650,148,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand"
-              MouseLeftButtonDown="Boton_MouseLeftButtonDown">
+        <Grid x:Name="BotonOpciones" Style="{StaticResource BotonAnimado}" Width="267" Height="80" Margin="650,148,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand" MouseLeftButtonDown="Boton_MouseLeftButtonDown">
             <Path Stretch="Fill" StrokeThickness="0">
                 <Path.Fill>
                     <ImageBrush ImageSource="/pared-ladrillo-bloques-pixeles-patron-fondo-nivel-juego-consola-retro-pixeles-cubicos-tex_384401-4691.jpg" Stretch="UniformToFill"/>
@@ -46,7 +93,7 @@
         </Grid>
 
         <!-- Botón Créditos -->
-        <Grid x:Name="BotonCreditos" Width="267" Height="80" Margin="650,253,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand"
+        <Grid x:Name="BotonCreditos" Style="{StaticResource BotonAnimado}" Width="267" Height="80" Margin="650,253,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand"
               MouseLeftButtonDown="Boton_MouseLeftButtonDown">
             <Path Stretch="Fill" StrokeThickness="0">
                 <Path.Fill>
@@ -60,4 +107,5 @@
         </Grid>
 
     </Grid>
+    
 </Window>

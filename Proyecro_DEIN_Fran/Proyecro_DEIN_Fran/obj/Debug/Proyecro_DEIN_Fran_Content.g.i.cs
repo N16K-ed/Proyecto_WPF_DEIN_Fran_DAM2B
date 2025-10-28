@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pared-ladrillo-bloques-pixeles-patron-fondo-nivel-juego-consola-retro-pixeles-cub" +
-    "icos-tex_384401-4691.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fondo%20boton%20return%20flipped.png")]
 
 

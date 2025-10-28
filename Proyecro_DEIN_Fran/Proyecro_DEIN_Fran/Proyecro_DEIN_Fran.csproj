@@ -67,8 +67,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Opciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Opciones.xaml.cs">
+      <DependentUpon>Opciones.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -105,6 +112,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="pared-ladrillo-bloques-pixeles-patron-fondo-nivel-juego-consola-retro-pixeles-cubicos-tex_384401-4691.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="14250051-old-brown-leather-book-texture-closeup-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fondo boton return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fondo boton return FLIPPED.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
