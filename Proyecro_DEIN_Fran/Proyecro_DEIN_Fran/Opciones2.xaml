@@ -1,0 +1,75 @@
+﻿<Window x:Class="Proyecro_DEIN_Fran.Opciones2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecro_DEIN_Fran"
+        mc:Ignorable="d"
+        Title="Opciones2" Height="412" Width="917" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Left="0" Top="0" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg" TileMode="None" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid x:Name="BotonReturn" Margin="0,0,348,296" Height="100" MouseLeftButtonDown="BotonReturn_MouseLeftButtonDown" Cursor="Hand">
+            <Path StrokeThickness="1" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Path.Fill>
+                    <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
+                </Path.Fill>
+                <Path.Data>
+                    <PathGeometry Figures="M0,0 L100,0 L100,70 L70,100 L0,100 Z"/>
+                </Path.Data>
+            </Path>
+            <Path Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0">
+                <Path.Fill>
+                    <ImageBrush ImageSource="/fondo boton return.png" Stretch="Uniform"/>
+                </Path.Fill>
+                <Path.Data>
+                    <PathGeometry Figures="M0,0 L80,0 L80,60 L60,80 L0,80 Z"/>
+                </Path.Data>
+            </Path>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="322" Margin="105,74,0,0"
+  VerticalAlignment="Top" Width="743" Grid.ColumnSpan="2">
+
+            <!-- Marco con textura de papel -->
+            <Border BorderThickness="4,4,4,4.5" BorderBrush="#FF9E8A72" Padding="5,0,0,0">
+                <Border.Background>
+                    <ImageBrush ImageSource="/FONDO MENÚ.png"/>
+                </Border.Background>
+                <Label Content="Más Opciones..." HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bradley Hand ITC" FontSize="20"/>
+
+                <!-- Scroll para mostrar más opciones -->
+            </Border>
+        </Grid>
+        <Button Content="OPCIÓN 1" HorizontalAlignment="Left" Margin="105,28,0,0" VerticalAlignment="Top" Height="46" Width="121" Panel.ZIndex="-1" FontFamily="Bradley Hand ITC" Click="Button_Click" FontSize="20" FontWeight="UltraBlack" Foreground="White" BorderBrush="#FF664B48">
+            <Button.Background>
+                <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Opacity="0.7"/>
+            </Button.Background>
+        </Button>
+        <Button Content="OPCIÓN 5" HorizontalAlignment="Left" Margin="279,28,0,0" VerticalAlignment="Top" Height="46" Width="121" Panel.ZIndex="-1" FontFamily="Bradley Hand ITC" FontSize="20" Grid.Column="1" FontWeight="UltraBlack" Foreground="White" BorderBrush="#FF664B48" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Opacity="0.7"/>
+            </Button.Background>
+        </Button>
+        <Button Content="OPCIÓN 3" HorizontalAlignment="Left" Margin="416,28,0,0" VerticalAlignment="Top" Height="46" Width="121" Panel.ZIndex="-1" FontFamily="Bradley Hand ITC" FontSize="20" Grid.ColumnSpan="2" FontWeight="UltraBlack" Foreground="White" BorderBrush="#FF664B48" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Opacity="0.7"/>
+            </Button.Background>
+        </Button>
+        <Button Content="OPCIÓN 2" HorizontalAlignment="Left" Margin="250,28,0,0" VerticalAlignment="Top" Height="46" Width="122" Panel.ZIndex="-1" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="UltraBlack" Foreground="White" BorderBrush="#FF664B48" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Opacity="0.7"/>
+            </Button.Background>
+        </Button>
+        <Button Content="OPCIÓN 4" HorizontalAlignment="Left" Margin="124,28,0,0" VerticalAlignment="Top" Height="46" Width="122" Panel.ZIndex="-1" FontFamily="Bradley Hand ITC" FontSize="20" Grid.Column="1" FontWeight="UltraBlack" Foreground="White" BorderBrush="#FF664B48" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Opacity="0.7"/>
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="459,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

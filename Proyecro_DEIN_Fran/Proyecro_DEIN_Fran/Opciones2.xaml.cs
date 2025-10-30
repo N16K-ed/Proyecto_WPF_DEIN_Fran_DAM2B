@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Proyecro_DEIN_Fran
 {
     /// <summary>
-    /// Lógica de interacción para Opciones.xaml
+    /// Lógica de interacción para Opciones2.xaml
     /// </summary>
-    public partial class Opciones : Window
+    public partial class Opciones2 : Window
     {
-        public Opciones()
+        public Opciones2()
         {
             InitializeComponent();
         }
@@ -30,48 +30,31 @@ namespace Proyecro_DEIN_Fran
             main.Show();
             this.Close();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
+            Opciones opciones = new Opciones();
+            opciones.Show();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            Opciones2 opciones2 = new Opciones2();
-            opciones2.Show();
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            Opciones2 opciones2 = new Opciones2();
-            opciones2.Show();
+
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            Opciones2 opciones2 = new Opciones2();
-            opciones2.Show();
+
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            Opciones2 opciones2 = new Opciones2();
-            opciones2.Show();
+
         }
     }
 }

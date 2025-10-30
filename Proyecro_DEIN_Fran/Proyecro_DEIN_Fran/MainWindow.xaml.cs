@@ -46,7 +46,10 @@ namespace Proyecro_DEIN_Fran
             }
             else if (sender == BotonCreditos)
             {
-                MessageBox.Show("Has clickeado Créditos");
+                //MessageBox.Show("Has clickeado Créditos");
+                Creditos creditos = new Creditos();
+                creditos.Show();
+                this.Close();
             }
         }
     }

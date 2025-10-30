@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fondo%20boton%20return%20flipped.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("menu2.png")]
 
 
