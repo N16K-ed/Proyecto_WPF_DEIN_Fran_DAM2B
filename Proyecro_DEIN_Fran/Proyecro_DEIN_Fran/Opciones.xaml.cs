@@ -42,17 +42,6 @@ namespace Proyecro_DEIN_Fran
             Opciones2 opciones2 = new Opciones2();
             opciones2.Show();
         }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             this.Close();
