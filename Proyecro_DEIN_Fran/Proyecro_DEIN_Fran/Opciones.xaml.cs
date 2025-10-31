@@ -38,28 +38,28 @@ namespace Proyecro_DEIN_Fran
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Close();
             Opciones2 opciones2 = new Opciones2();
+            this.Close();            
             opciones2.Show();
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Close();
             Opciones2 opciones2 = new Opciones2();
+            this.Close();            
             opciones2.Show();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Close();
             Opciones2 opciones2 = new Opciones2();
+            this.Close();
             opciones2.Show();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            this.Close();
             Opciones2 opciones2 = new Opciones2();
+            this.Close();
             opciones2.Show();
         }
     }

@@ -105,7 +105,17 @@
             </Path>
             <TextBlock Text="Créditos" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="24" Margin="102,0,0,0" FontFamily="Comic Sans MS"/>
         </Grid>
+        <Path Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="384" Margin="588,8,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="330">
+            <Path.Data>
+                <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
+            </Path.Data>
+        </Path>
+        <Path Fill="#FF2A2A86" HorizontalAlignment="Left" Height="395" Margin="539,2,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="379" Panel.ZIndex="-1">
+            <Path.Data>
+                <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
+            </Path.Data>
+        </Path>
 
     </Grid>
-    
+
 </Window>
