@@ -35,7 +35,9 @@ namespace Proyecro_DEIN_Fran
         {
             if (sender == BotonJugar)
             {
-                MessageBox.Show("Has clickeado Jugar");
+                Login login = new Login();
+                login.Show();
+                this.Close();
             }
             else if (sender == BotonOpciones)
             {

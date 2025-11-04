@@ -56,14 +56,13 @@
         </Style>
     </Window.Resources>
     <Grid Background="#FF2D2D2D">
-
         <Image x:Name="image" HorizontalAlignment="Right" Height="100" Margin="0,10,802,0" VerticalAlignment="Top" Width="100" Source="/Captura de pantalla 2025-10-09 194810.png"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Right" Height="40" Margin="0,336,862,10" VerticalAlignment="Top" Width="40" BorderBrush="#FF664B48" BorderThickness="3,3,3,3" RenderTransformOrigin="1.425,0.401" Click="Button_Click" Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de pantalla 2025-10-09 200018.png" Stretch="Fill"/>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="20" Margin="65,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="847" Foreground="White" FontFamily="Comic Sans MS"><Run Text="Versión x.x.?&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/><Run Text="..."/><Run Language="es-es" Text="........"/></TextBlock>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="40" Margin="65,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="847" Foreground="White" FontFamily="Comic Sans MS"><Run Text="Versión x.x.?&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/><Run Text="..."/><Run Language="es-es" Text="........"/></TextBlock>
 
         <!-- Uso Path(s) para los botones principales -->
         <!-- Botón Jugar -->
@@ -105,7 +104,7 @@
             </Path>
             <TextBlock Text="Créditos" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="24" Margin="102,0,0,0" FontFamily="Comic Sans MS"/>
         </Grid>
-        <Grid Background="#CC2D2D2D" x:Name="MenuCreditos">
+        <Grid Background="#CC2D2D2D" x:Name="MenuCreditos" Visibility="Collapsed">
             <Path HorizontalAlignment="Left" Height="384" Margin="555,8,0,0" Stretch="Fill" VerticalAlignment="Top" Width="363">
                 <Path.Fill>
                     <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
