@@ -105,16 +105,50 @@
             </Path>
             <TextBlock Text="Créditos" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="24" Margin="102,0,0,0" FontFamily="Comic Sans MS"/>
         </Grid>
-        <Path Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="384" Margin="588,8,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="330">
-            <Path.Data>
-                <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
-            </Path.Data>
-        </Path>
-        <Path Fill="#FF2A2A86" HorizontalAlignment="Left" Height="395" Margin="539,2,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="379" Panel.ZIndex="-1">
-            <Path.Data>
-                <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
-            </Path.Data>
-        </Path>
+        <Grid Background="#CC2D2D2D" x:Name="MenuCreditos">
+            <Path HorizontalAlignment="Left" Height="384" Margin="555,8,0,0" Stretch="Fill" VerticalAlignment="Top" Width="363">
+                <Path.Fill>
+                    <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
+                </Path.Fill>
+                <Path.Data>
+                    <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
+                </Path.Data>
+            </Path>
+            <Path HorizontalAlignment="Left" Height="395" Margin="539,2,0,0" Stretch="Fill" VerticalAlignment="Top" Width="379" Panel.ZIndex="-1">
+                <Path.Fill>
+                    <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
+                </Path.Fill>
+                <Path.Data>
+                    <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
+                </Path.Data>
+            </Path>
+            <Grid x:Name="BotonReturnCreditos" Margin="0,0,0,300" Height="100" MouseLeftButtonDown="BotonReturnCreditos_MouseLeftButtonDown" Cursor="Hand" HorizontalAlignment="Right" Width="97" VerticalAlignment="Bottom">
+                <Path StrokeThickness="1" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
+                    </Path.Fill>
+                    <Path.Data>                        
+                        <PathGeometry Figures="M0,0 L100,0 L100,100 L30,100 L0,70 Z"/>
+                    </Path.Data>
+                </Path>
+                <Path Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0">
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/fondo boton return FLIPPED.png" Stretch="Uniform"/>
+                    </Path.Fill>
+                    <Path.Data>                        
+                        <PathGeometry Figures="M0,0 L80,0 L80,80 L20,80 L0,60 Z"/>
+                    </Path.Data>
+                </Path>
+            </Grid>
+            <Label Content="CRÉDITOS" HorizontalAlignment="Left" Margin="588,26,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="40" FontWeight="Bold" Foreground="White"/>
+            <Label Content="REDES&#xD;&#xA;" HorizontalAlignment="Left" Margin="812,101,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="White" Height="33"/>
+            <Border BorderBrush="#FFAE9B8B" BorderThickness="4,4,4,4" HorizontalAlignment="Left" Height="279" Margin="594,88,0,0" VerticalAlignment="Top" Width="204" CornerRadius="4,4,4,4" Background="#FFDDDAD3"/>
+            <TextBlock HorizontalAlignment="Left" Height="256" Margin="605,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"><Run Language="es-es" Text="Créditos..."/><LineBreak/><Run Language="es-es"/></TextBlock>
+            <Image HorizontalAlignment="Left" Height="40" Margin="829,148,0,0" VerticalAlignment="Top" Width="40" Source="/images (1).jpg" Stretch="Fill"/>
+            <Image HorizontalAlignment="Left" Height="40" Margin="829,209,0,0" VerticalAlignment="Top" Width="40" Source="/X_logo (1).jpg" Stretch="Fill"/>
+            <Image HorizontalAlignment="Left" Height="40" Margin="829,268,0,0" VerticalAlignment="Top" Width="40" Source="/YouTube_play_button_square_(2013-2017).svg.png" Stretch="Fill"/>
+
+        </Grid>
 
     </Grid>
 

@@ -146,5 +146,20 @@
   <ItemGroup>
     <Resource Include="MENU2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="istockphoto-1377054525-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="X_logo %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Youtube_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YouTube_play_button_square_%282013-2017%29.svg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
