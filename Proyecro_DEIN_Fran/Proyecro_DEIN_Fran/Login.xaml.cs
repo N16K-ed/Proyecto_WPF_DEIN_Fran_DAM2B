@@ -35,7 +35,9 @@ namespace Proyecro_DEIN_Fran
         {
             if (user.Text.ToLower().Equals("admin") && password.Password.ToLower().Equals("admin"))
             {
-                MessageBox.Show("Has Iniciado Sesión.");
+                JuegoPrincipal principal = new JuegoPrincipal();
+                principal.Show();
+                this.Close();
             }
             else
             {

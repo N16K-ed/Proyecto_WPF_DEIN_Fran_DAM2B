@@ -20,3 +20,5 @@ C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN
 C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Opciones2.baml
 C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Login.g.cs
 C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\Login.baml
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\JuegoPrincipal.g.cs
+C:\datos\Documents\DISEÑO-INTERFACES\Proyecto_WPF_DEIN_Fran_DAM2B\Proyecro_DEIN_Fran\Proyecro_DEIN_Fran\obj\Debug\JuegoPrincipal.baml
