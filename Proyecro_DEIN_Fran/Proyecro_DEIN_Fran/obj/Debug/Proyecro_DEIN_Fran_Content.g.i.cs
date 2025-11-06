@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("youtube_play_button_square_(2013-2017).svg.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("brown_backpack_png_clip_art-3025.png")]
 
 

@@ -19,10 +19,12 @@ namespace Proyecro_DEIN_Fran
     /// </summary>
     public partial class JuegoPrincipal : Window
     {
-        public bool menuToggle = false;
+        private bool menuToggle = false;
+        private bool menuInventarioAbierto = false;
         public JuegoPrincipal()
         {
             InitializeComponent();
+            CargarRejillaVacia();
         }
 
         private void CerrarSesion_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -42,19 +44,59 @@ namespace Proyecro_DEIN_Fran
         {
             if (e.Key == Key.Escape)
             {
-                if (!menuToggle)
-                {
-                    MenuJuego.Visibility = Visibility.Visible;
-                    menuToggle = true;
+                if (!menuInventarioAbierto){ 
+                
+                    if (!menuToggle)
+                    {
+                        MenuJuego.Visibility = Visibility.Visible;
+                        menuToggle = true;
+                    }
+                    else
+                    {
+                        MenuJuego.Visibility= Visibility.Collapsed;
+                        menuToggle = false;
+                    }
                 }
                 else
                 {
-                    MenuJuego.Visibility= Visibility.Collapsed;
-                    menuToggle = false;
+                    menuInventarioAbierto = false;
+                    MenuInventario.Visibility = Visibility.Collapsed;
+                    MenuJuego.Visibility = Visibility.Visible;
                 }
             }
+            
         }
 
+        private void Inventario_MouseLeftButtonDown(Object sender, MouseButtonEventArgs e)
+        {
+            MenuInventario.Visibility = Visibility.Visible;
+            MenuJuego.Visibility = Visibility.Collapsed;
+            menuInventarioAbierto = true;
+
+        }
+
+        private void BotonReturnInventario_MouseLeftButtonDown(Object sender, MouseButtonEventArgs e)
+        {
+            menuInventarioAbierto = false;
+            MenuInventario.Visibility= Visibility.Collapsed;
+            MenuJuego.Visibility = Visibility.Visible;
+        }
+
+        private void CargarRejillaVacia()
+        {
+            InventarioGrid.Children.Clear();
+            int totalSlots = 48; 
+
+            for (int i = 0; i < totalSlots; i++)
+            {
+                var slot = new Border
+                {
+                    Style = (Style)FindResource("SlotStyle")
+                };
+
+                InventarioGrid.Children.Add(slot);
+            }
+        }
 
     }
 

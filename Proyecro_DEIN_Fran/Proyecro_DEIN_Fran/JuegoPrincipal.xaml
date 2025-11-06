@@ -6,6 +6,23 @@
         xmlns:local="clr-namespace:Proyecro_DEIN_Fran"
         mc:Ignorable="d"
         Title="JuegoPrincipal" Height="412" Width="917" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Left="0" Top="0" KeyDown="Grid_KeyDown" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <CubicEase x:Key="easeOut" EasingMode="EaseOut"/>
+        <Style x:Key="SlotStyle" TargetType="Border">
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Background" Value="#32000000"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#660066FF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
     <Grid Background="#FF2D2D2D">
         <!-- Para mantener el tamaño de la ventana -->
         <Grid Width="917" Margin="0,155,0,10">
@@ -52,35 +69,120 @@
                         <PathGeometry Figures="M0,0 L80,0 L80,60 L60,80 L0,80 Z"/>
                     </Path.Data>
                 </Path>
-                <Grid>
-                    <!-- Capa superior: solo esquinas superiores recortadas -->
-                    <Path HorizontalAlignment="Center" VerticalAlignment="Top" Height="164" Width="917" Stretch="Fill" Margin="0,232,0,0">
-                        <Path.Fill>
-                            <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
-                        </Path.Fill>
-                        <Path.Data>
-                            <!-- Ancho = 353, Alto = 374. Recortamos 10px en esquinas superiores -->
-                            <PathGeometry Figures="M10,0 L343,0 L353,10 L353,374 L0,374 L0,10 Z"/>
-                        </Path.Data>
-                    </Path>
-
-                    <!-- Capa inferior: rectángulo normal (sin recortes) -->
-                    <Path HorizontalAlignment="Center" VerticalAlignment="Top" Height="181" Width="917" Stretch="Fill" Panel.ZIndex="-1" Margin="0,215,0,0">
-                        <Path.Fill>
-                            <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg" Stretch="UniformToFill"/>
-                        </Path.Fill>
-                        <Path.Data>
-                            <!-- Rectángulo completo -->
-                            <PathGeometry Figures="M0,0 L369,0 L369,385 L0,385 Z"/>
-                        </Path.Data>
-                    </Path>
+            </Grid>
+            <Grid>
+                <!-- Capa superior: solo esquinas superiores recortadas -->
+                <Path HorizontalAlignment="Center" VerticalAlignment="Top" Height="164" Width="917" Stretch="Fill" Margin="0,232,0,0">
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <!-- Ancho = 353, Alto = 374. Recortamos 10px en esquinas superiores -->
+                        <PathGeometry Figures="M10,0 L343,0 L353,10 L353,374 L0,374 L0,10 Z"/>
+                    </Path.Data>
+                </Path>
+                <!-- Capa inferior: rectángulo normal (sin recortes) -->
+                <Path HorizontalAlignment="Center" VerticalAlignment="Top" Height="181" Width="917" Stretch="Fill" Panel.ZIndex="-1" Margin="0,215,0,0">
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg" Stretch="UniformToFill"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <!-- Rectángulo completo -->
+                        <PathGeometry Figures="M0,0 L369,0 L369,385 L0,385 Z"/>
+                    </Path.Data>
+                </Path>
+                <Grid x:Name="BotonInventario" Width="80" Height="80" RenderTransformOrigin="0.5,0.5" Cursor="Hand" Margin="418,266,419,50" MouseLeftButtonDown="Inventario_MouseLeftButtonDown">
+                    <Grid.RenderTransform>
+                        <ScaleTransform x:Name="scaleTransform" ScaleX="1" ScaleY="1"/>
+                    </Grid.RenderTransform>
+                    <Border BorderBrush="#FF664B48" BorderThickness="3" CornerRadius="4" Background="#FFBB5246">
+                        <Rectangle Margin="3">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="/Brown_Backpack_PNG_Clip_Art-3025.png" Stretch="Uniform"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Border>
+                    <Grid.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleX" To="1.1" Duration="0:0:0.15" EasingFunction="{StaticResource easeOut}"/>
+                                    <DoubleAnimation Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleY" To="1.1" Duration="0:0:0.15" EasingFunction="{StaticResource easeOut}"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleX" To="1" Duration="0:0:0.15" EasingFunction="{StaticResource easeOut}"/>
+                                    <DoubleAnimation Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleY" To="1" Duration="0:0:0.15" EasingFunction="{StaticResource easeOut}"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Grid.Triggers>
                 </Grid>
             </Grid>
-
         </Grid>
+        <Grid>
+            <Grid Background="#CC2D2D2D" x:Name="MenuInventario" Visibility="Collapsed">
+                <Grid x:Name="BotonReturnInventario" Margin="0,0,0,300" Height="100" MouseLeftButtonDown="BotonReturnInventario_MouseLeftButtonDown" Cursor="Hand" HorizontalAlignment="Right" Width="97" VerticalAlignment="Bottom">
+                    <Path StrokeThickness="1" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <Path.Fill>
+                            <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
+                        </Path.Fill>
+                        <Path.Data>
+                            <PathGeometry Figures="M0,0 L100,0 L100,100 L30,100 L0,70 Z"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0">
+                        <Path.Fill>
+                            <ImageBrush ImageSource="/fondo boton return FLIPPED.png" Stretch="Uniform"/>
+                        </Path.Fill>
+                        <Path.Data>
+                            <PathGeometry Figures="M0,0 L80,0 L80,80 L20,80 L0,60 Z"/>
+                        </Path.Data>
+                    </Path>
+                </Grid>                
+                <Path HorizontalAlignment="Right" Height="384" Margin="0,8,375,0" Stretch="Fill" VerticalAlignment="Top" Width="543" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <ScaleTransform ScaleX="-1"/>
+                    </Path.RenderTransform>
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
+                    </Path.Data>
+                </Path>
+                <Image HorizontalAlignment="Left" Height="22" Margin="347,32,0,0" VerticalAlignment="Top" Width="22" Source="/fondo boton return.png"/>
+                <Border BorderBrush="#FF664B48" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="346,31,0,0" VerticalAlignment="Top" Width="24" CornerRadius="2,2,2,2"/>
+                <ComboBox Width="96" SelectedIndex="0" Margin="56,72,765,305" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderThickness="2,2,2,2" Background="{x:Null}" BorderBrush="{x:Null}" IsSynchronizedWithCurrentItem="True" Cursor="Hand">
+                    <ComboBoxItem Content="Filtro 1"/>
+                    <ComboBoxItem Content="Filtro 2"/>
+                    <ComboBoxItem Content="Filtro 3"/>
+                </ComboBox>
+                <Path HorizontalAlignment="Right" Height="395" Margin="0,2,358,0" Stretch="Fill" VerticalAlignment="Top" Width="560" Panel.ZIndex="-1" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <ScaleTransform ScaleX="-1"/>
+                    </Path.RenderTransform>
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <PathGeometry Figures="M917,3.04 L917.5,395.58 764.75,395.58 752.98074,358.16383 752.98074,31.546593 763.23191,1.5817089 z"/>
+                    </Path.Data>
+                </Path>                
+                <Image HorizontalAlignment="Left" Height="257" Margin="619,85,0,0" VerticalAlignment="Top" Width="170" Source="/Brown_Backpack_PNG_Clip_Art-3025.png"/>                
+                
+                <TextBox HorizontalAlignment="Left" Height="19" Margin="56,34,0,0" TextWrapping="Wrap" Text="Búsqueda..." VerticalAlignment="Top" Width="271" Background="#FFDDDBD4" BorderBrush="#33000000" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+                <Border BorderBrush="#FF664B48" BorderThickness="1" HorizontalAlignment="Left" Height="21" Margin="55,33,0,0" VerticalAlignment="Top" Width="273" CornerRadius="2,2,2,2"/>
+                <Border BorderBrush="#FFAD9A88" BorderThickness="4" HorizontalAlignment="Left" Height="234" Margin="55,111,0,0" VerticalAlignment="Top" Width="400" CornerRadius="2" Background="#FFDDDBD4">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="5">
+                        <UniformGrid x:Name="InventarioGrid" Columns="8"/>
+                    </ScrollViewer>
+                </Border>
 
-
-
-
+            </Grid>
+        </Grid>        
     </Grid>
 </Window>
