@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|c:\\datos\\documents\\dise\u00F1o-interfaces\\proyecto_wpf_dein_fran_dam2b\\proyecro_dein_fran\\proyecro_dein_fran\\juegoprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\juegoprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\juegoprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\juegoprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\opciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\opciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,61 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JuegoPrincipal.xaml",
-              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\JuegoPrincipal.xaml",
-              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\JuegoPrincipal.xaml",
-              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\JuegoPrincipal.xaml*",
-              "RelativeToolTip": "Proyecro_DEIN_Fran\\JuegoPrincipal.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-05T14:14:04.222Z",
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Login.xaml.cs",
+              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs*",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\Login.xaml.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T16:30:52.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "JuegoPrincipal.xaml.cs",
-              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\JuegoPrincipal.xaml.cs",
-              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\JuegoPrincipal.xaml.cs",
-              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\JuegoPrincipal.xaml.cs*",
-              "RelativeToolTip": "Proyecro_DEIN_Fran\\JuegoPrincipal.xaml.cs*",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwF4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T14:50:21.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Opciones.xaml",
-              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones.xaml",
-              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Opciones.xaml",
-              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones.xaml",
-              "RelativeToolTip": "Proyecro_DEIN_Fran\\Opciones.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-05T14:16:41.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Login.xaml.cs",
-              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
-              "RelativeToolTip": "Proyecro_DEIN_Fran\\Login.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwCcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T16:30:52.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Login.xaml",
               "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml",
               "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Login.xaml",
               "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml",
               "RelativeToolTip": "Proyecro_DEIN_Fran\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-04T14:56:01.321Z"
+              "WhenOpened": "2025-11-04T14:56:01.321Z",
+              "EditorCaption": ""
             }
           ]
         }

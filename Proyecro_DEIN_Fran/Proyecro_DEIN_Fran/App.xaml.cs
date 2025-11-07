@@ -13,5 +13,16 @@ namespace Proyecro_DEIN_Fran
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            // Inicializar base y tablas
+            InicializadorBaseDatos.Inicializar();
+
+            // Abrir ventana de login
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
     }
 }

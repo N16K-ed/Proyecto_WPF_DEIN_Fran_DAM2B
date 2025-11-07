@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,17 +33,45 @@ namespace Proyecro_DEIN_Fran
             this.Close();
         }
 
-        private void IniSesion_MouseLeftButtonDown(Object sender, MouseButtonEventArgs e)
+        private void IniSesion_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            if (user.Text.ToLower().Equals("admin") && password.Password.ToLower().Equals("admin"))
+            string usuarioInput = user.Text.Trim().ToLower();
+            string contraseñaInput = password.Password.Trim().ToLower();
+
+            try
             {
-                JuegoPrincipal principal = new JuegoPrincipal();
-                principal.Show();
-                this.Close();
+                string connStr = "server=localhost;port=3306;uid=root;pwd=root;database=ProyectoInterfacesFran;";
+
+                using (var conn = new MySqlConnection(connStr))
+                {
+                    conn.Open();
+
+                    // Seleccionamos directamente el id del usuario que coincida
+                    string sql = "SELECT id FROM usuarios WHERE LOWER(usuario)=@usuario AND LOWER(contraseña)=@contraseña LIMIT 1";
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@usuario", usuarioInput);
+                        cmd.Parameters.AddWithValue("@contraseña", contraseñaInput);
+
+                        object result = cmd.ExecuteScalar(); // devuelve null si no hay coincidencia
+
+                        if (result != null)
+                        {
+                            // Usuario válido
+                            JuegoPrincipal principal = new JuegoPrincipal();
+                            principal.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario o contraseña incorrectos.");
+                        }
+                    }
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Usuario o contraseña incorrectos.");
+                MessageBox.Show($"Error al conectar o consultar la base de datos: {ex.Message}");
             }
         }
 
@@ -53,5 +83,10 @@ namespace Proyecro_DEIN_Fran
                 IniSesion_MouseLeftButtonDown(sender, null);
             }
         }
+
+        private void Registro_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }  
     }
 }
