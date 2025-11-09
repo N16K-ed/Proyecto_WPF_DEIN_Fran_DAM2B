@@ -12,18 +12,19 @@ using System.Windows;
 namespace Proyecro_DEIN_Fran
 {
     public static class InicializadorBaseDatos
-    {
+    { 
+        public static string nombreDB = "ProyectoInterfacesFran";
         public static void Inicializar()
         {
-            string nombreDB = "ProyectoInterfacesFran";
+           
 
             // Conectarse al servidor sin base de datos para crearla si no existe
             var builderServidor = new MySqlConnectionStringBuilder
             {
                 Server = "localhost",
-                Port = 3306,
-                UserID = "root",
-                Password = "root"
+                Port = 3309,
+                UserID = "acda",
+                Password = "masacda"
             };
 
             try
@@ -45,9 +46,9 @@ namespace Proyecro_DEIN_Fran
             var builderDB = new MySqlConnectionStringBuilder
             {
                 Server = "localhost",
-                Port = 3306,
-                UserID = "root",
-                Password = "root",
+                Port = 3309,
+                UserID = "acda",
+                Password = "masacda",
                 Database = nombreDB
             };
 

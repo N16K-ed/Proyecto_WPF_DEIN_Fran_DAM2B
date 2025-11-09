@@ -226,5 +226,11 @@
   <ItemGroup>
     <Resource Include="Brown_Backpack_PNG_Clip_Art-3025.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Captura de pantalla 2025-11-09 190637.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

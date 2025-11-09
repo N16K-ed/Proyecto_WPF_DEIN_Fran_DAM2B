@@ -1,8 +1,7 @@
 ﻿<Application x:Class="Proyecro_DEIN_Fran.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Proyecro_DEIN_Fran"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:Proyecro_DEIN_Fran">
     <Application.Resources>
          
     </Application.Resources>

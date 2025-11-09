@@ -33,34 +33,26 @@ namespace Proyecro_DEIN_Fran
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Menu1.Visibility = Visibility.Visible;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Opciones2 opciones2 = new Opciones2();
-            this.Close();            
-            opciones2.Show();
+            Menu1.Visibility = Visibility.Collapsed;
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Opciones2 opciones2 = new Opciones2();
-            this.Close();            
-            opciones2.Show();
+            Menu1.Visibility = Visibility.Collapsed;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Opciones2 opciones2 = new Opciones2();
-            this.Close();
-            opciones2.Show();
+            Menu1.Visibility = Visibility.Collapsed;
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            Opciones2 opciones2 = new Opciones2();
-            this.Close();
-            opciones2.Show();
+            Menu1.Visibility = Visibility.Collapsed;
         }
     }
 }

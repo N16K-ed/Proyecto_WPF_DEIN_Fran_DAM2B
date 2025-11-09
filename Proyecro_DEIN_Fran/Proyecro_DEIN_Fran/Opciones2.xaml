@@ -40,7 +40,6 @@
                 <Border.Background>
                     <ImageBrush ImageSource="/FONDO MENÚ.png"/>
                 </Border.Background>
-                <Label Content="Más Opciones..." HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bradley Hand ITC" FontSize="20"/>
 
                 <!-- Scroll para mostrar más opciones -->
             </Border>

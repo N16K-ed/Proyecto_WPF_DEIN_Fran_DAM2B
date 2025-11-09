@@ -40,69 +40,68 @@
                 <Border.Background>
                     <ImageBrush ImageSource="/FONDO MENÚ.png"/>
                 </Border.Background>
+                <Label Content="Más Opciones..." Margin="286,137,291,136" FontSize="20" FontFamily="Bradley Hand ITC"/>
 
-                <!-- Scroll para mostrar más opciones -->
-                <ScrollViewer VerticalScrollBarVisibility="Auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      Margin="69.5,10,69.5,8" BorderBrush="#FFA39079" Padding="10,0,0,0" Width="595" Height="300" BorderThickness="3,3,3,3">
-                    <ScrollViewer.Background>
-                        <ImageBrush ImageSource="/MENU2.png"/>
-                    </ScrollViewer.Background>
-
-                    <!-- Contenedor principal -->
-                    <StackPanel Width="704">
-
-                        <!-- Título principal -->
-                        <TextBlock Text="OPCIONES X" FontFamily="Bradley Hand ITC" FontSize="20" Foreground="#802B1D" FontWeight="Bold" Margin="0,10,0,10" Width="652"/>
-                        <Border BorderThickness="3,3,3,3" BorderBrush="#FFBBB1A6" Padding="10" Width="521" CornerRadius="2,2,2,2" Height="96" Margin="25,0,0,10" HorizontalAlignment="Left">
-                            <Border.Background>
-                                <ImageBrush ImageSource="/MENU2.png"/>
-                            </Border.Background>
-                            <StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="OPCIÓN A" FontWeight="Bold" FontFamily="Bradley Hand ITC" Margin="0,5,0,5" Width="140"/>
-                                    <ComboBox Width="96" SelectedIndex="0" Margin="0,0,0,10" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderThickness="2,2,2,2" Background="#FF91765C" BorderBrush="#FF91765C">
-                                        <ComboBoxItem Content="Opción A"/>
-                                        <ComboBoxItem Content="Opción B"/>
-                                        <ComboBoxItem Content="Opción C"/>
-                                    </ComboBox>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="OPCIÓN B" FontWeight="Bold" FontFamily="Bradley Hand ITC" Margin="0,10,0,5" Width="139"/>
-                                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                                        <RadioButton Content="A" Margin="0,0,10,0" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderBrush="#FF91765C">
-                                            <RadioButton.Background>
-                                                <ImageBrush ImageSource="/MENU2.png"/>
-                                            </RadioButton.Background>
-                                        </RadioButton>
-                                        <RadioButton Content="B" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderBrush="#FF91765C">
-                                            <RadioButton.Background>
-                                                <ImageBrush ImageSource="/MENU2.png"/>
-                                            </RadioButton.Background>
-                                        </RadioButton>
-                                    </StackPanel>
-                                </StackPanel>
-                            </StackPanel>
-                        </Border>
-
-                        <!-- Grupo de opciones X -->
-
-                        <!-- Segunda sección -->
-                        <TextBlock Text="OPCIONES Y" FontFamily="Bradley Hand ITC" FontSize="20" Foreground="#802B1D" FontWeight="Bold" Margin="0,0,0,10" Width="654"/>
-                            <Border BorderThickness="3,3,3,3" BorderBrush="#FFBBB1A6" Padding="10" Width="521" CornerRadius="2,2,2,2" HorizontalAlignment="Left" Margin="25,0,0,0">
-                            <Border.Background>
-                                <ImageBrush ImageSource="/MENU2.png"/>
-                            </Border.Background>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="OPCIÓN C" FontWeight="Bold" FontFamily="Bradley Hand ITC" Margin="0,5,0,5" Width="140" Height="12"/>
-                                <Border CornerRadius="10" BorderThickness="2" BorderBrush="#FF91765C" Background="#FFBBA996" Width="50" Height="20">
-                                    <ToggleButton BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{x:Null}"/>
-                                </Border>
-                            </StackPanel>
-                        </Border>
-                    </StackPanel>
-                </ScrollViewer>
             </Border>
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled"
+                      Margin="78,14,69,8" BorderBrush="#FFA39079" Padding="10,0,0,0" Width="595" Height="300" BorderThickness="3,3,3,3" x:Name="Menu1">
+                <ScrollViewer.Background>
+                    <ImageBrush ImageSource="/MENU2.png"/>
+                </ScrollViewer.Background>
+
+                <!-- Contenedor principal -->
+                <StackPanel Width="704">
+
+                    <!-- Grupo de opciones X -->
+                    <!-- Título principal -->
+                    <TextBlock Text="OPCIONES X" FontFamily="C" FontSize="20" Foreground="#802B1D" FontWeight="Bold" Margin="0,10,0,10" Width="652"/>
+                    <Border BorderThickness="3,3,3,3" BorderBrush="#FFBBB1A6" Padding="10" Width="521" CornerRadius="2,2,2,2" Height="96" Margin="25,0,0,10" HorizontalAlignment="Left">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/MENU2.png"/>
+                        </Border.Background>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="OPCIÓN A" FontWeight="Bold" FontFamily="Bradley Hand ITC" Margin="0,5,0,5" Width="140"/>
+                                <ComboBox Width="96" SelectedIndex="0" Margin="0,0,0,10" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderThickness="2,2,2,2" Background="#FF91765C" BorderBrush="#FF91765C">
+                                    <ComboBoxItem Content="Opción A"/>
+                                    <ComboBoxItem Content="Opción B"/>
+                                    <ComboBoxItem Content="Opción C"/>
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="OPCIÓN B" FontWeight="Bold" FontFamily="Bradley Hand ITC" Margin="0,10,0,5" Width="139"/>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <RadioButton Content="A" Margin="0,0,10,0" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderBrush="#FF91765C">
+                                        <RadioButton.Background>
+                                            <ImageBrush ImageSource="/MENU2.png"/>
+                                        </RadioButton.Background>
+                                    </RadioButton>
+                                    <RadioButton Content="B" FontFamily="Bradley Hand ITC" FontWeight="Bold" BorderBrush="#FF91765C">
+                                        <RadioButton.Background>
+                                            <ImageBrush ImageSource="/MENU2.png"/>
+                                        </RadioButton.Background>
+                                    </RadioButton>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Segunda sección -->
+                    <TextBlock Text="OPCIONES Y" FontFamily="Bradley Hand ITC" FontSize="20" Foreground="#802B1D" FontWeight="Bold" Margin="0,0,0,10" Width="654"/>
+                    <Border BorderThickness="3,3,3,3" BorderBrush="#FFBBB1A6" Padding="10" Width="521" CornerRadius="2,2,2,2" HorizontalAlignment="Left" Margin="25,0,0,0">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/MENU2.png"/>
+                        </Border.Background>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="OPCIÓN C" FontWeight="Bold" FontFamily="Bradley Hand ITC" Margin="0,5,0,5" Width="140" Height="12"/>
+                            <Border CornerRadius="10" BorderThickness="2" BorderBrush="#FF91765C" Background="#FFBBA996" Width="50" Height="20">
+                                <ToggleButton BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{x:Null}"/>
+                            </Border>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Button Content="OPCIÓN 1" HorizontalAlignment="Left" Margin="105,28,0,0" VerticalAlignment="Top" Height="46" Width="121" Panel.ZIndex="-1" FontFamily="Bradley Hand ITC" Click="Button_Click" FontSize="20" FontWeight="UltraBlack" Foreground="White" BorderBrush="#FF664B48">
             <Button.Background>

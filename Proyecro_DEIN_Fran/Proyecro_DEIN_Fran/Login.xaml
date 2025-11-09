@@ -7,7 +7,44 @@
         mc:Ignorable="d"
         Title="Login"  Height="412" Width="917" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Left="0" Top="0" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF2D2D2D">
-        <Grid>
+        <Grid x:Name="Register" d:IsHidden="True" Visibility="Collapsed">
+            <!-- Capa superior -->
+            <Path HorizontalAlignment="Center" VerticalAlignment="Center" Height="374" Width="353" Stretch="Fill">
+                <Path.Fill>
+                    <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
+                </Path.Fill>
+                <Path.Data>
+                    <PathGeometry Figures="M763.23,1.58 L905.77,1.58 L917,31.55 L917,358.16 L905.77,395.58 L763.23,395.58 L752.98,358.16 L752.98,31.55 Z"/>
+                </Path.Data>
+            </Path>
+
+            <!-- Capa inferior -->
+            <Path HorizontalAlignment="Center" VerticalAlignment="Center" Height="385" Width="369" Stretch="Fill" Panel.ZIndex='-1'>
+                <Path.Fill>
+                    <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg" Stretch="UniformToFill"/>
+                </Path.Fill>
+                <Path.Data>
+                    <PathGeometry Figures="M763.23,1.58 L905.77,1.58 L917,31.55 L917,358.16 L905.77,395.58 L763.23,395.58 L752.98,358.16 L752.98,31.55 Z"/>
+                </Path.Data>
+            </Path>
+            <Label Content="Nuevo Usuario" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="40" FontWeight="Bold" Foreground="#FF673A1E"/>
+            <PasswordBox x:Name="password1"  HorizontalAlignment="Center" Height="25" Margin="0,268,0,0" VerticalAlignment="Top" Width="172" SelectionBrush="#FFDFD1AC" TabIndex="2"/>
+            <TextBox x:Name="user1" HorizontalAlignment="Center" Height="25" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" SelectionBrush="#FFDFD1AC" TabIndex="1"/>
+            <Label Content="USUARIO" HorizontalAlignment="Center" Margin="0,107,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFC26B58"/>
+            <Label Content="CONTRASEÑA" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFBE644E"/>
+            <TextBlock HorizontalAlignment="Center" Height="11" Margin="0,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="917" IsEnabled="False"/>
+            <Grid Margin="402,309,403,51" MouseLeftButtonDown="Register_MouseLeftButtonDown">
+                <Label Content="Registrarse" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold">
+                    <Label.Background>
+                        <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
+                    </Label.Background>
+                </Label>
+                <Border BorderBrush="#FF693D24" BorderThickness="1" HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Width="111"/>
+            </Grid>
+            <TextBox x:Name="email" HorizontalAlignment="Center" Height="25" Margin="0,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" SelectionBrush="#FFDFD1AC" TabIndex="1"/>
+            <Label Content="CORREO" HorizontalAlignment="Center" Margin="0,170,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFC26B58"/>
+        </Grid>
+        <Grid x:Name="LoginMenu">
             <!-- Capa superior -->
             <Path HorizontalAlignment="Center" VerticalAlignment="Center" Height="374" Width="353" Stretch="Fill">
                 <Path.Fill>
@@ -32,7 +69,7 @@
             <TextBox x:Name="user" HorizontalAlignment="Center" Height="25" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" SelectionBrush="#FFDFD1AC" TabIndex="1"/>
             <Label Content="USUARIO" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFC26B58"/>
             <Label Content="CONTRASEÑA" HorizontalAlignment="Center" Margin="0,186,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFBE644E"/>
-            <Grid Cursor="Hand" MouseLeftButtonDown="IniSesion_MouseLeftButtonDown" KeyDown="Grid_KeyDown" Focusable="True" HorizontalAlignment="Center" Width="151" Height="43" VerticalAlignment="Top" Margin="0,286,0,0">
+            <Grid Cursor="Hand" MouseLeftButtonDown="IniSesion_MouseLeftButtonDown" KeyDown="Grid_KeyDown" Focusable="True" HorizontalAlignment="Center" Width="151" Height="43" VerticalAlignment="Top" Margin="0,270,0,0">
                 <Rectangle HorizontalAlignment="Center" Height="43" VerticalAlignment="Center" Width="148" RadiusX="4" RadiusY="4" Cursor="Hand"/>
                 <Border BorderBrush="#FF693D24" BorderThickness="4" HorizontalAlignment="Center" Height="43" VerticalAlignment="Top" Width="148" CornerRadius="4" IsEnabled="False">
                     <Border.Background>
@@ -42,7 +79,7 @@
                 <Label Content="Iniciar Sesión" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="White" Width="138" Height="33" Margin="0,5,0,0"/>
             </Grid>
             <TextBlock HorizontalAlignment="Center" Height="11" Margin="0,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="917" IsEnabled="False"/>
-            <Grid Margin="402,334,403,26" MouseLeftButtonDown="Registro_MouseLeftButtonDown">
+            <Grid Margin="402,334,403,26" MouseLeftButtonDown="AbrirRegistro_MouseLeftButtonDown">
                 <Label Content="Registrarse" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg"/>

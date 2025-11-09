@@ -1,49 +1,172 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\",
+  "WorkspaceRootPath": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|c:\\users\\n16ko\\desktop\\masanz\\dam2\\dein\\proyecto_wpf_dein_fran_dam2b\\proyecro_dein_fran\\proyecro_dein_fran\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|c:\\users\\n16ko\\desktop\\masanz\\dam2\\dein\\proyecto_wpf_dein_fran_dam2b\\proyecro_dein_fran\\proyecro_dein_fran\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|c:\\users\\n16ko\\desktop\\masanz\\dam2\\dein\\proyecto_wpf_dein_fran_dam2b\\proyecro_dein_fran\\proyecro_dein_fran\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|c:\\users\\n16ko\\desktop\\masanz\\dam2\\dein\\proyecto_wpf_dein_fran_dam2b\\proyecro_dein_fran\\proyecro_dein_fran\\inicializadorbasedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\inicializadorbasedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\opciones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\opciones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\opciones2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\opciones2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\proyecro_dein_fran\\opciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{433C0558-E643-4BF3-8819-D73FCE00B51A}|Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran.csproj|solutionrelative:proyecro_dein_fran\\opciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 437,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 305,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\App.xaml.cs",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T19:37:38.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Opciones.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones.xaml.cs",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Opciones.xaml.cs",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones.xaml.cs",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\Opciones.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T17:49:58.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Login.xaml",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-04T14:56:01.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\App.config",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\App.config",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\App.config",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-09T19:37:21.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Opciones.xaml",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones.xaml",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Opciones.xaml",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones.xaml",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\Opciones.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-09T17:49:01.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\App.xaml",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\App.xaml",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\App.xaml",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-09T19:37:33.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
               "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Login.xaml.cs",
-              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml.cs",
               "RelativeToolTip": "Proyecro_DEIN_Fran\\Login.xaml.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDIAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T16:30:52.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml",
-              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Login.xaml",
-              "ToolTip": "C:\\datos\\Documents\\DISE\u00D1O-INTERFACES\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Login.xaml",
-              "RelativeToolTip": "Proyecro_DEIN_Fran\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-04T14:56:01.321Z",
+              "DocumentIndex": 5,
+              "Title": "InicializadorBaseDatos.cs",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\InicializadorBaseDatos.cs",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\InicializadorBaseDatos.cs",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\InicializadorBaseDatos.cs",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\InicializadorBaseDatos.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T19:09:52.187Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Opciones2.xaml",
+              "DocumentMoniker": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones2.xaml",
+              "RelativeDocumentMoniker": "Proyecro_DEIN_Fran\\Opciones2.xaml",
+              "ToolTip": "C:\\Users\\n16ko\\Desktop\\MASANZ\\DAM2\\DEIN\\Proyecto_WPF_DEIN_Fran_DAM2B\\Proyecro_DEIN_Fran\\Proyecro_DEIN_Fran\\Opciones2.xaml",
+              "RelativeToolTip": "Proyecro_DEIN_Fran\\Opciones2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-09T18:05:44.108Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 95,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

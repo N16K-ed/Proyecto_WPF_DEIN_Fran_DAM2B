@@ -28,9 +28,17 @@ namespace Proyecro_DEIN_Fran
 
         private void BotonReturn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+            if (Register.Visibility == Visibility.Visible)
+            {
+                Register.Visibility = Visibility.Collapsed;
+                LoginMenu.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
         private void IniSesion_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -40,7 +48,7 @@ namespace Proyecro_DEIN_Fran
 
             try
             {
-                string connStr = "server=localhost;port=3306;uid=root;pwd=root;database=ProyectoInterfacesFran;";
+                string connStr = "server=localhost;port=3309;uid=acda;pwd=masacda;database=ProyectoInterfacesFran;";
 
                 using (var conn = new MySqlConnection(connStr))
                 {
@@ -84,9 +92,73 @@ namespace Proyecro_DEIN_Fran
             }
         }
 
-        private void Registro_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void AbrirRegistro_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            LoginMenu.Visibility = Visibility.Collapsed;
+            Register.Visibility = Visibility.Visible;
+        }
 
-        }  
+        private void Register_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            
+            string usuario = user1.Text.Trim();
+            string correo = email.Text.Trim();
+            string contraseña = password1.Password.Trim();
+
+            
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
+            {
+                MessageBox.Show("Por favor, introduce un usuario y una contraseña.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            
+            var builderDB = new MySqlConnectionStringBuilder
+            {
+                Server = "localhost",
+                Port = 3309,
+                UserID = "acda",
+                Password = "masacda",
+                Database = InicializadorBaseDatos.nombreDB 
+            };
+
+            try
+            {
+                using (var conn = new MySqlConnection(builderDB.ConnectionString))
+                {
+                    conn.Open();
+                    
+                    string comprobarUsuario = "SELECT COUNT(*) FROM usuarios WHERE usuario = @usuario";
+                    using (var cmd = new MySqlCommand(comprobarUsuario, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        int existe = Convert.ToInt32(cmd.ExecuteScalar());
+                        if (existe > 0)
+                        {
+                            MessageBox.Show("El usuario ya existe. Elige otro nombre.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return;
+                        }
+                    }
+                    
+                    string insertarUsuario = "INSERT INTO usuarios (usuario, contraseña, email) VALUES (@usuario, @contraseña, @correo)";
+                    using (var cmd = new MySqlCommand(insertarUsuario, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        cmd.Parameters.AddWithValue("@contraseña", contraseña); 
+                        cmd.Parameters.AddWithValue("@correo", string.IsNullOrEmpty(correo) ? DBNull.Value : (object)correo);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Registro completado con éxito.", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    LoginMenu.Visibility = Visibility.Visible;
+                    Register.Visibility = Visibility.Collapsed;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al registrar el usuario:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }
