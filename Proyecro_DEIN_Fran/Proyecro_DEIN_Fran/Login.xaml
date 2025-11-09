@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="Login"  Height="412" Width="917" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Left="0" Top="0" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF2D2D2D">
-        <Grid x:Name="Register" d:IsHidden="True" Visibility="Collapsed">
+        <Grid x:Name="Boton" MouseLeftButtonDown="MostrarUsers_MouseLeftButtonDown" Margin="741,0,0,353" Panel.ZIndex="1">
+            <Rectangle HorizontalAlignment="Center" Height="43" VerticalAlignment="Center" Width="174" RadiusX="4" RadiusY="4" Cursor="Hand"/>
+            <Border BorderBrush="#FF693D24" BorderThickness="4" HorizontalAlignment="Center" Height="43" VerticalAlignment="Center" Width="174" CornerRadius="4" IsEnabled="False">
+                <Border.Background>
+                    <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg" Stretch="UniformToFill"/>
+                </Border.Background>
+            </Border>
+            <Label x:Name="nombreBoton" Content="Mostrar Usuarios" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="White" Width="175" Height="33" RenderTransformOrigin="0.555,0.509"/>
+        </Grid>
+        <Grid x:Name="Register" Visibility="Collapsed">
             <!-- Capa superior -->
             <Path HorizontalAlignment="Center" VerticalAlignment="Center" Height="374" Width="353" Stretch="Fill">
                 <Path.Fill>
@@ -28,12 +37,13 @@
                 </Path.Data>
             </Path>
             <Label Content="Nuevo Usuario" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="40" FontWeight="Bold" Foreground="#FF673A1E"/>
-            <PasswordBox x:Name="password1"  HorizontalAlignment="Center" Height="25" Margin="0,268,0,0" VerticalAlignment="Top" Width="172" SelectionBrush="#FFDFD1AC" TabIndex="2"/>
-            <TextBox x:Name="user1" HorizontalAlignment="Center" Height="25" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" SelectionBrush="#FFDFD1AC" TabIndex="1"/>
+            <PasswordBox x:Name="password1"  HorizontalAlignment="Center" Height="25" Margin="0,268,0,0" VerticalAlignment="Top" Width="172" SelectionBrush="#FFDFD1AC" TabIndex="6"/>
+            <TextBox x:Name="user1" HorizontalAlignment="Center" Height="25" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" SelectionBrush="#FFDFD1AC" TabIndex="4"/>
             <Label Content="USUARIO" HorizontalAlignment="Center" Margin="0,107,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFC26B58"/>
             <Label Content="CONTRASEÑA" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFBE644E"/>
             <TextBlock HorizontalAlignment="Center" Height="11" Margin="0,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="917" IsEnabled="False"/>
-            <Grid Margin="402,309,403,51" MouseLeftButtonDown="Register_MouseLeftButtonDown">
+            <TextBox x:Name="email" HorizontalAlignment="Center" Height="25" Margin="0,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" SelectionBrush="#FFDFD1AC" TabIndex="5"/>
+            <Grid Margin="402,309,403,51" MouseLeftButtonDown="Register_MouseLeftButtonDown" Focusable="True">
                 <Label Content="Registrarse" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg"/>
@@ -41,7 +51,6 @@
                 </Label>
                 <Border BorderBrush="#FF693D24" BorderThickness="1" HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Width="111"/>
             </Grid>
-            <TextBox x:Name="email" HorizontalAlignment="Center" Height="25" Margin="0,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" SelectionBrush="#FFDFD1AC" TabIndex="1"/>
             <Label Content="CORREO" HorizontalAlignment="Center" Margin="0,170,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="20" FontWeight="Bold" Foreground="#FFC26B58"/>
         </Grid>
         <Grid x:Name="LoginMenu">
@@ -105,6 +114,18 @@
                     <PathGeometry Figures="M0,0 L80,0 L80,60 L60,80 L0,80 Z"/>
                 </Path.Data>
             </Path>
+        </Grid>
+        <Grid x:Name="Usuarios" Margin="741,43,0,0" Visibility="Collapsed">
+            <ListBox x:Name="ListaUsuarios" Margin="6,10,6,10" d:ItemsSource="{d:SampleData ItemCount=5}" Panel.ZIndex="1">
+                <ListBox.Background>
+                    <ImageBrush ImageSource="/fondos-de-textura-de-papel-antiguo-ucwuigpb57cktvxm.jpg" Stretch="UniformToFill"/>
+                </ListBox.Background>
+            </ListBox>
+            <Border BorderBrush="#FF693D24" BorderThickness="4" CornerRadius="4" IsEnabled="False">
+                <Border.Background>
+                    <ImageBrush ImageSource="/14250051-old-brown-leather-book-texture-closeup-photo.jpg" Stretch="UniformToFill"/>
+                </Border.Background>
+            </Border>
         </Grid>
     </Grid>
 </Window>

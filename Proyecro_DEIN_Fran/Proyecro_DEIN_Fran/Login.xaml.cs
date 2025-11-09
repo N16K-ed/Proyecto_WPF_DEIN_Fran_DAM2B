@@ -21,9 +21,12 @@ namespace Proyecro_DEIN_Fran
     /// </summary>
     public partial class Login : Window
     {
+        private bool mostrandoUsers;
         public Login()
         {
             InitializeComponent();
+            mostrandoUsers = false;
+            BuscarUsuarios();
         }
 
         private void BotonReturn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -159,6 +162,61 @@ namespace Proyecro_DEIN_Fran
             {
                 MessageBox.Show($"Error al registrar el usuario:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void BuscarUsuarios()
+        {
+            var builderDB = new MySqlConnectionStringBuilder
+            {
+                Server = "localhost",
+                Port = 3309,
+                UserID = "acda",
+                Password = "masacda",
+                Database = InicializadorBaseDatos.nombreDB
+            };
+
+            try
+            {
+                using (var conn = new MySqlConnection(builderDB.ConnectionString))
+                {
+                    conn.Open();
+
+                    string query = "SELECT usuario FROM usuarios;";
+                    using (var cmd = new MySqlCommand(query, conn))
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        // Limpiar el ListBox antes de asignar
+                        ListaUsuarios.Items.Clear();
+
+                        while (reader.Read())
+                        {
+                            string nombreUsuario = reader.GetString("usuario");
+                            ListaUsuarios.Items.Add(nombreUsuario);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar usuarios:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void MostrarUsers_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (!mostrandoUsers)
+            {
+                Usuarios.Visibility = Visibility.Visible;
+                nombreBoton.Content = "         Ocultar";
+                mostrandoUsers = true;
+            }
+            else
+            {
+                Usuarios.Visibility = Visibility.Collapsed;
+                nombreBoton.Content = "Mostrar Usuarios";
+                mostrandoUsers = false;
+            }
+               
         }
     }
 }
